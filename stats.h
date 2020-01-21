@@ -95,7 +95,7 @@ char find_mean(char *p, int N);
  * @param int N    :  Length of array
  * @return char    :  maximum of an array
  */
-char find_max(char *p, int N);
+char find_maximum(char *p, int N);
 
 
 
@@ -110,7 +110,7 @@ char find_max(char *p, int N);
  * @param int N    :  Length of array
  * @return char    :  minimum of an array
  */
-char find_min(char *p, int N);
+char find_minimum(char *p, int N);
 
 
 
