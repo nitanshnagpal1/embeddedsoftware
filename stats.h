@@ -38,7 +38,7 @@
  *
  * @return This function does not return anything.
  */
-void print_array(char *p, int N);
+void print_array(unsigned char *p, int N);
 
 
 
@@ -53,7 +53,7 @@ void print_array(char *p, int N);
  * @param int N   :   Lenght of array
  * @returns This function does not return anythng.
  */
-void print_statistics(char *p, int N);
+void print_statistics(unsigned char *p, int N);
 
 
 
@@ -64,11 +64,11 @@ void print_statistics(char *p, int N);
  * This function returns the median of an array. This function takes two input : a pointer to 
    array and length of array.This function returns the median.
  *
- * @param char *p  :  pointer to an array
+ * @param unsigned char *p  :  pointer to an array
  * @param int N    :  Length of array
- * @return char a  :  median of an array
+ * @return unsigned char a  :  median of an array
  */
-char find_median(char *p, int N);
+unsigned char find_median(unsigned char *p, int N);
 
 
 
@@ -78,11 +78,11 @@ char find_median(char *p, int N);
  * This function returns the mean of an array. This function takes two input : a pointer to 
    array and length of array.This function returns the mean.
  *
- * @param char *p  :  pointer to an array
+ * @param unsigned char *p  :  pointer to an array
  * @param int N    :  Length of array
- * @return char    :  mean of an array
+ * @return unsigned char    :  mean of an array
  */
-char find_mean(char *p, int N);
+unsigned char find_mean(unsigned char *p, int N);
 
 
 /**
@@ -91,11 +91,11 @@ char find_mean(char *p, int N);
  * This function returns the maximum of an array. This function takes two input : a pointer to 
    array and length of array.This function returns the mean.
  *
- * @param char *p  :  pointer to an array
+ * @param unsigned char *p  :  pointer to an array
  * @param int N    :  Length of array
- * @return char    :  maximum of an array
+ * @return unsigned char    :  maximum of an array
  */
-char find_maximum(char *p, int N);
+unsigned char find_maximum(unsigned char *p, int N);
 
 
 
@@ -106,11 +106,11 @@ char find_maximum(char *p, int N);
  * This function returns the minimum of an array. This function takes two input : a pointer to 
    array and length of array.This function returns the mean.
  *
- * @param char *p  :  pointer to an array
+ * @param unsigned char *p  :  pointer to an array
  * @param int N    :  Length of array
- * @return char    :  minimum of an array
+ * @return unsigned char    :  minimum of an array
  */
-char find_minimum(char *p, int N);
+unsigned char find_minimum(unsigned char *p, int N);
 
 
 
@@ -121,11 +121,11 @@ char find_minimum(char *p, int N);
  * This function returns the sorted array. This function takes two input : a pointer to 
    array and length of array.
  *
- * @param char *p  :  pointer to an array
+ * @param unsigned char *p  :  pointer to an array
  * @param int N    :  Length of array
- * @return char*   :  pointer of sorted array
+ * @return unsigned char*   :  pointer of sorted array
  */
-char* sort_array(char *p, int N);
+unsigned char* sort_array(unsigned char *p, int N);
 
 
 

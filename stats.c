@@ -39,43 +39,68 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
-
+print_array(test,SIZE);
 }
 
 /* Function definitions imported from stats.h header file  */
 
 
-void print_array(char *p, int N){
+void print_array(unsigned char *p, int N){
+
+int i=0; // variable for traversing the array
+for(i=0;i<N;i++){
+printf("%u \t",p[i]);
+}
 
 }
 
-void print_statistics(char *p, int N){
+void print_statistics(unsigned char *p, int N){
 
 }
 
-char find_median(char *p, int N){
-
-}
-
-
-char find_maximum(char *p, int N){
-
-}
-
-
-char find_minimum(char *p, int N){
+unsigned char find_median(unsigned char *p, int N){
 
 }
 
 
+unsigned char find_maximum(unsigned char *p, int N){
 
-char find_mean(char *p, int N){
+}
+
+
+unsigned char find_minimum(unsigned char *p, int N){
 
 }
 
 
 
-char* sort_array(char *p, int N){
+unsigned char find_mean(unsigned char *p, int N){
+
+}
+
+
+
+unsigned char* sort_array(unsigned char *p, int N){
+/* We will use bubble sort for sorting */
+
+int i=0,j=0;
+unsigned char temp;
+for(i=0;i<N-1;i++){
+
+for(j=0;j<N-1;j++){
+
+if(p[j]>p[j+1]){
+/* SWAP */
+temp=p[j];
+p[j]=p[j+1];
+p[j+1]=temp;
+
+}
+}
+
+
+}
+return p;  // return the same pointer
 
 }
 
