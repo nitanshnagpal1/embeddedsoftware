@@ -24,6 +24,7 @@
 
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "stats.h"
 
 /* Size of the Data Set */
@@ -39,7 +40,11 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
+
 print_array(test,SIZE);
+
+print_statistics(test, SIZE);
+
 }
 
 /* Function definitions imported from stats.h header file  */
@@ -56,25 +61,53 @@ printf("%u \t",p[i]);
 
 void print_statistics(unsigned char *p, int N){
 
+printf("\n Mean of array is : %u", find_mean(p, N));
+
+printf("\n Median of array is : %u", find_median(p, N));
+
+printf("\n Maximum element of array is : %u", find_maximum(p, N));
+
+printf("\n Minimum element of array is : %u", find_minimum(p, N));
+
 }
 
 unsigned char find_median(unsigned char *p, int N){
 
+sort_array(p,N);  // sort array in ascending order
+ 
+return p[(N/2)-1];  // return the mid element
 }
 
 
 unsigned char find_maximum(unsigned char *p, int N){
 
+sort_array(p,N);  // sort array in ascending order
+ 
+return p[N-1];  // return the highest element
 }
 
 
 unsigned char find_minimum(unsigned char *p, int N){
+
+sort_array(p, N);    // sort array in ascending order
+
+return p[0];         // return the lowest element
 
 }
 
 
 
 unsigned char find_mean(unsigned char *p, int N){
+
+int i=0, sum=0;
+
+for(i=0;i<N;i++){
+
+sum +=p[i];
+
+}
+
+return (unsigned char)(sum/N);
 
 }
 
